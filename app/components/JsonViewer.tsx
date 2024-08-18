@@ -1,5 +1,5 @@
 import { Prism as SyntaxHighlighter } from "react-syntax-highlighter";
-import { coldarkDark as theme } from "react-syntax-highlighter/dist/esm/styles/prism";
+import { ghcolors as theme } from "react-syntax-highlighter/dist/esm/styles/prism";
 import jsonExample from "@/app/mock/jsonExample.json";
 const jsonExample2 = {
   name: "martin",
@@ -14,7 +14,8 @@ function JsonViewer() {
       showLineNumbers={true}
       style={theme}
       customStyle={{
-        backgroundColor: "transparent"
+        backgroundColor: "transparent",
+        border:"none"
       }}
     >
       {codeString}
