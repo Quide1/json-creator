@@ -35,21 +35,27 @@ body {
 }
 
 @layer components {
-  .scrollbar{
-    ::-webkit-scrollbar {
-      width: 10px; 
-      height: 10px; 
+  .scrollbar {
+    /* Pseudoelementos para la barra de desplazamiento */
+    scrollbar-width: thin; /* Para navegadores Firefox */
+    scrollbar-color: #006aff #111b27; /* Color de la barra y del track */
+  
+    /* WebKit (Chrome, Safari y otros basados en WebKit) */
+    &::-webkit-scrollbar {
+      width: 10px; /* Ancho de la scrollbar */
+      height: 10px; /* Altura de la scrollbar horizontal */
     }
   
-    ::-webkit-scrollbar-track {
-      background: #111b27; 
+    &::-webkit-scrollbar-track {
+      background: #111b27; /* Color de fondo de la scrollbar */
       border-radius: 3px;
     }
   
-    ::-webkit-scrollbar-thumb {
-      background-color: #006aff; 
-      border-radius: 5px; 
-      border: 2px solid #ffffff; 
+    &::-webkit-scrollbar-thumb {
+      background-color: #006aff; /* Color de la "thumb" (parte que se mueve) */
+      border-radius: 7px;
+      border: 2px solid #ffffff; /* Borde alrededor de la "thumb" */
     }
   }
+  
 }
