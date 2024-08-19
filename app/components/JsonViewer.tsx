@@ -15,7 +15,8 @@ function JsonViewer() {
       style={theme}
       customStyle={{
         backgroundColor: "transparent",
-        border:"none"
+        border:"none",
+        overflow:"visible",
       }}
     >
       {codeString}

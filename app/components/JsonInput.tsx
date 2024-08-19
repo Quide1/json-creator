@@ -1,11 +1,9 @@
-import React from 'react'
+import React from "react";
 
 function JsonInput() {
   return (
-    <div>
-      
-    </div>
-  )
+    <textarea className="h-full w-full m-0 resize-none p-0 text-black text-sm" />
+  );
 }
 
-export default JsonInput
+export default JsonInput;
