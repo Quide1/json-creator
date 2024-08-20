@@ -6,13 +6,13 @@ export interface AuxProps {
 }
 function SectionJson(props: AuxProps) {
   return (
-    <div className="h-full flex-[50%] flex-col overflow-auto bg-slate-200 scrollbar m-0 p-0">
-      <div className="p-1 flex justify-end h-[5%]  bg-slate-500">
+    <div className="h-full flex-[50%] flex-col overflow-auto bg-slate-900 scrollbar m-0 p-1">
+      <div className="p-1 flex justify-end h-[5%]  bg-slate-900 ">
         <button>
-          <CopyClipboard height="15" width="15"/>
+          <CopyClipboard height="18" width="18"/>
         </button>
       </div>
-      <div className=" h-[95%] border-2 border-black flex-grow overflow-x-auto w-full">
+      <div className="flex h-[95%] flex-grow overflow-x-auto w-full">
       {props.children}
       </div>
     </div>
